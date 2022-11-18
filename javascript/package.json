@@ -1,0 +1,11 @@
+{
+  "name": "w3s-javascript",
+  "version": "1.0.0",
+  "description": "W3S S3-compatible Javascript examples",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "VP",
+  "license": "ISC"
+}
