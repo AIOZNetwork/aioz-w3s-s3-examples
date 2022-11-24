@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "aioz w3s s3-compatible examples"
+version = "0.1.0"
+description = "Example codes for AIOZ W3S S3-compatible"
+authors = ["Vuong Pham <vuong.pham@aioz.io>"]
+readme = "README.md"
+packages = [{include = "aioz w3s s3_compatible examples"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+boto3 = "^1.26.15"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
