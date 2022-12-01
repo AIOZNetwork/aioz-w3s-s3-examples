@@ -14,8 +14,8 @@ def main():
         objects = bucket.objects.all()
         for obj in objects:
             print(obj.key)
-    except ClientError:
-        print("Couldn't list objects from bucket '%s'.", bucket_name)
+    except ClientError as e:
+        print("Error", e)
 
 
 if __name__ == '__main__':

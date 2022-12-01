@@ -9,8 +9,8 @@ s3_resource = boto3.resource('s3',
                              aws_access_key_id=os.environ['ACCESS_KEY'],
                              aws_secret_access_key=os.environ['SECRET_KEY'],
                              endpoint_url='https://s3-beta.aioz.storage',
-                            #  config=Config(
-                            #      signature_version='s3',
-                            #      s3={'addressing_style': 'path'}
-                            #  )
+                             config=Config(
+                                #  signature_version='s3',
+                                 s3={'addressing_style': 'path'}
+                             )
                              )

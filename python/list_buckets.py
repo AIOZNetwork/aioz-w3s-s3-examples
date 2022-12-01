@@ -6,8 +6,8 @@ def main():
     try:
         for bucket in s3_resource.buckets.all():
             print(bucket.name)
-    except ClientError:
-        print("Couldn't list buckets.")
+    except ClientError as e:
+        print("Error", e)
 
 
 if __name__ == '__main__':
