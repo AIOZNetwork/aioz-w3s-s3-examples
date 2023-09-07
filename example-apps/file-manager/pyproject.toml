@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "file-manager"
+version = "0.1.0"
+description = ""
+authors = ["vuongphamaioz <66234239+vuongphamaioz@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "file_manager"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.103.1"
+boto3 = "^1.28.41"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+python-multipart = "^0.0.6"
+python-dotenv = "^1.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.287"
+black = "^23.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
