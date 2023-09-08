@@ -64,14 +64,13 @@ async def download_file(file_name: str):
     except botocore.exceptions.ClientError as e:
         # If the file does not exist, return a 404 error to the client
         if e.response["Error"]["Code"] == "404":
-            raise HTTPException(status_code=400, detail="File not found")
+            raise HTTPException(status_code=404, detail="File not found")
         # Otherwise, return a generic error message to the client with a status code of 500
         raise HTTPException(status_code=500, detail="Failed to download file")
 
 
 @app.get("/list/")
 async def list_files():
-    # List all objects in the bucket using a list comprehension
     files = [file.key for file in bucket.objects.all()]
     return {"files": files}
 
