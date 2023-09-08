@@ -19,9 +19,9 @@ s3_resource = boto3.resource(
     aws_secret_access_key=os.environ["SECRET_KEY"],
     endpoint_url=os.environ["ENDPOINT_URL"],
 )
-bucket_name = "file-manager"
+bucket_name = "file-manager"  # Replace with your bucket name
 bucket = s3_resource.Bucket(bucket_name)
-EXPIRATION_TIME = 600
+EXPIRATION_TIME = 600  # 10 minutes, in seconds, adjusted as needed.
 
 
 @app.post("/upload/")
