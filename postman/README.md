@@ -23,9 +23,9 @@ Before you can use AIOZ W3S with Postman, you must install Postman and configure
 2. Configure credentials.
 
 - Create a new request.
-- In Authorization tab, select AWS Signature.
+- In the Authorization tab, select AWS Signature.
 - Fill in the Access Key and Secret Key fields.
-- In Advanced settings, fill in the Service Name field with `s3` and the Region field with `us-east-1`.
+- In Advanced settings, fill in the Service Name field `s3` and the Region field with `us-east-1`.
 
 After you have installed and configured Postman, the following sections show you how to use it. For completed examples, see the [Amazon S3 API Reference](https://docs.aws.amazon.com/AmazonS3/latest/API/Type_API_Reference.html).
 
@@ -33,7 +33,7 @@ After you have installed and configured Postman, the following sections show you
 
 ```http
 PUT / HTTP/1.1
-Host: s3-beta.aioz.storage/bucket-name
+Host: w3s.storage/bucket-name
 
 ```
 
@@ -41,7 +41,7 @@ Host: s3-beta.aioz.storage/bucket-name
 
 ```http
 GET / HTTP/1.1
-Host: s3-beta.aioz.storage
+Host: w3s.storage
 
 ```
 
@@ -49,14 +49,14 @@ Host: s3-beta.aioz.storage
 
 ```http
 GET /bucket-name HTTP/1.1
-Host: s3-beta.aioz.storage
+Host: w3s.storage
 ```
 
 ## Upload object
 
 ```http
 PUT /bucket-name/object-name HTTP/1.1
-Host: s3-beta.aioz.storage
+Host: w3s.storage
 
 ```
 
@@ -64,7 +64,7 @@ Host: s3-beta.aioz.storage
 
 ```http
 GET /bucket-name/object-name HTTP/1.1
-Host: s3-beta.aioz.storage
+Host: w3s.storage
 
 ```
 
@@ -72,7 +72,7 @@ Host: s3-beta.aioz.storage
 
 ```http
 DELETE /bucket-name/object-name HTTP/1.1
-Host: s3-beta.aioz.storage
+Host: w3s.storage
 
 ```
 
@@ -80,7 +80,7 @@ Host: s3-beta.aioz.storage
 
 ```http
 POST /?delete HTTP/1.1
-Host: s3-beta.aioz.storage
+Host: w3s.storage
   
 ```
 
@@ -88,7 +88,7 @@ Host: s3-beta.aioz.storage
 
 ```http
 DELETE /bucket-name HTTP/1.1
-Host: s3-beta.aioz.storage
+Host: w3s.storage
 
 ```
 
@@ -96,7 +96,7 @@ Host: s3-beta.aioz.storage
 
 ```http
 PUT /dest-bucket-name/dest-object-name HTTP/1.1
-Host: s3-beta.aioz.storage
+Host: w3s.storage
 x-amz-copy-source: /bucket-name/object-name
 
 ```
