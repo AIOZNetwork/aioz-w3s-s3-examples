@@ -13,7 +13,7 @@ const s3Client = new S3Client({
     secretAccessKey: "YOUR_SECRET_ACCESS_KEY",
   },
   endpoint: {
-    url: "https://s3-beta.aioz.storage"
+    url: "https://s3.w3s.aioz.network"
   },
   forcePathStyle: true,
 });
@@ -55,7 +55,7 @@ def main():
                                  # Get the credentials from the environment variables.
                                  aws_access_key_id="YOUR_ACCESS_KEY_ID",
                                  aws_secret_access_key="YOUR_SECRET_ACCESS_KEY",
-                                 endpoint_url='https://s3-beta.aioz.storage',
+                                 endpoint_url='https://s3.w3s.aioz.network',
                                  config=Config(
                                     #  signature_version='s3',
                                      s3={'addressing_style': 'path'}
@@ -98,7 +98,7 @@ import (
 func main() {
 	resolver := aws.EndpointResolverWithOptionsFunc(func(service, region string, options ...interface{}) (aws.Endpoint, error) {
 		return aws.Endpoint{
-			URL:           "https://s3-beta.aioz.storage/",
+			URL:           "https://s3.w3s.aioz.network/",
 			SigningRegion: "us-east-1",
 		}, nil
 	})

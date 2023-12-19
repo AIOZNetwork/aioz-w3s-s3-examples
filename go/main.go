@@ -152,7 +152,7 @@ func main() {
 
 	resolver := aws.EndpointResolverWithOptionsFunc(func(service, region string, options ...interface{}) (aws.Endpoint, error) {
 		return aws.Endpoint{
-			URL:           "https://s3-beta.aioz.storage/",
+			URL:           "https://s3.w3s.aioz.network/",
 			SigningRegion: "us-east-1",
 		}, nil
 	})

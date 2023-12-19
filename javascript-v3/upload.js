@@ -12,7 +12,7 @@ const s3Client = new S3Client({
   },
   endpoint: {
     protocol: "https://",
-    hostname: "s3-beta.aioz.storage",
+    hostname: "s3.w3s.aioz.network",
     path: "/",
   },
   forcePathStyle: true,

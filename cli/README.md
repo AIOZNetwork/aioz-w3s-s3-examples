@@ -27,37 +27,37 @@ After you have installed and configured AWS CLI, the following sections show you
 ## Create a bucket
 
 ```bash
-aws s3 --endpoint-url https://s3-beta.aioz.storage mb s3://my-bucket
+aws s3 --endpoint-url https://s3.w3s.aioz.network mb s3://my-bucket
 ```
 
 ## List buckets
 
 ```bash
-aws s3 --endpoint-url https://s3-beta.aioz.storage ls
+aws s3 --endpoint-url https://s3.w3s.aioz.network ls
 ```
 
 ## List objects
 
 ```bash
-aws s3 --endpoint-url https://s3-beta.aioz.storage ls s3://bucket-name
+aws s3 --endpoint-url https://s3.w3s.aioz.network ls s3://bucket-name
 ```
 
 ## Upload object
 
 ```bash
-aws s3 --endpoint-url https://s3-beta.aioz.storage cp /path/to/file s3://bucket-name
+aws s3 --endpoint-url https://s3.w3s.aioz.network cp /path/to/file s3://bucket-name
 ```
 
 ## Get object
 
 ```bash
-aws s3 --endpoint-url https://s3-beta.aioz.storage cp s3://bucket-name/file /path/to/file
+aws s3 --endpoint-url https://s3.w3s.aioz.network cp s3://bucket-name/file /path/to/file
 ```
 
 ## Delete object
 
 ```bash
-aws s3 --endpoint-url https://s3-beta.aioz.storage rm s3://bucket-name/file
+aws s3 --endpoint-url https://s3.w3s.aioz.network rm s3://bucket-name/file
 ```
 
 ## Delete multiple objects
@@ -65,17 +65,17 @@ aws s3 --endpoint-url https://s3-beta.aioz.storage rm s3://bucket-name/file
 This command will delete all objects in the bucket `bucket-name`.
 
 ```bash
-aws s3 --endpoint-url https://s3-beta.aioz.storage rm s3://bucket-name/ --recursive
+aws s3 --endpoint-url https://s3.w3s.aioz.network rm s3://bucket-name/ --recursive
 ```
 
 ## Delete bucket
 
 ```bash
-aws s3 --endpoint-url https://s3-beta.aioz.storage rb s3://bucket-name
+aws s3 --endpoint-url https://s3.w3s.aioz.network rb s3://bucket-name
 ```
 
 ## Copy object
 
 ```bash
-aws s3 --endpoint-url https://s3-beta.aioz.storage cp s3://bucket-name/file s3://bucket-name/file
+aws s3 --endpoint-url https://s3.w3s.aioz.network cp s3://bucket-name/file s3://bucket-name/file
 ```

@@ -33,7 +33,7 @@ var AWS = require("aws-sdk");
 AWS.config.update({
   accessKeyId: process.env.ACCESS_KEY,
   secretAccessKey: process.env.SECRET_KEY,
-  endpoint: "s3-beta.aioz.storage",
+  endpoint: "s3.w3s.aioz.network",
   s3ForcePathStyle: true,
 });
 
